@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebApp</title>
+        <link href="css/reset.css" type="text/css" rel="stylesheet">
+        <link href="css/main.css" type="text/css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="layout-wrap clearfix">
+                <a class="netcraft-logo" href=""><img src="img/logo-netcraft.svg" alt="netcraft"></a>
+
+                <form class="search-box" method="get">
+                    <input type="search" placeholder="search">
+                </form>
+            </div>
+        </header>
+
+        <section class="page-body layout-wrap">
+            <div class="notifications">
+                
+            </div>
+
+            <nav>
+                <ul class="nav-list clearfix">
+                    <li class="nav-item select1" tabindex="0">
+                        <h2 class="nav-item-heading">Select<br> Reporting Platform</h2>
+
+                        <div class="menu">
+                            <div class="menu-hint clearfix">
+                                <p>Choose QS report</p>
+                                <div class="arrow"></div>
+                            </div>
+
+                            <ul class="action-list">
+                                <li class="action"><a class="action-link" href="http://netcraft.co.il/" target="_blank">Corporate</a></li>
+                                <li class="action"><a class="action-link" href="http://netcraft.co.il/" target="_blank">Simple</a></li>
+                                <li class="action"><a class="action-link" href="http://netcraft.co.il/" target="_blank">Business</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item select2" tabindex="0">
+                        <h2 class="nav-item-heading">Select<br> Dashboard</h2>
+
+                        <div class="menu">
+                            <div class="menu-hint clearfix">
+                                <p>Choose dashboard</p>
+                                <div class="arrow"></div>
+                            </div>
+
+                            <ul class="action-list">
+                                <li class="action"><a class="action-link" href="">Account Dashboard</a></li>
+                                <li class="action"><a class="action-link" href="">Daily Huddle Dashboard</a></li>
+                                <li class="action"><a class="action-link" href="">Tier 2 Dashboard</a></li>
+                                <li class="action"><a class="action-link" href="">ADM Dashboard</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item select3" tabindex="0">
+                        <h2 class="nav-item-heading">Help &amp;<br> Tutorials</h2>
+
+                        <div class="menu">
+                            <div class="menu-hint clearfix">
+                                <p>Choose guide</p>
+                                <div class="arrow"></div>
+                            </div>
+
+                            <ul class="action-list">
+                                <li class="action"><a class="action-link" href="">Real Time</a></li>
+                                <li class="action"><a class="action-link" href="">Past Data</a></li>
+                                <li class="action"><a class="action-link" href="">Corporate Data</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="tabs">
+                <ul class="tab-nav-list clearfix">
+                    <li class="tab-nav-item"><a class="tab-nav-link highlighted-tab" href="#quick-reports">
+                        <i class="fa fa-external-link"></i>
+                        Quick Reports</a>
+                    </li>
+                    <li class="tab-nav-item"><a class="tab-nav-link" href="#fmy-folders">
+                        <i class="fa fa-star-o"></i>
+                        My Folders</a>
+                    </li>
+                    <li class="tab-nav-item"><a class="tab-nav-link" href="#my-team-folders">
+                        <i class="fa fa-folder-open-o"></i>
+                        My Team Folders</a>
+                    </li>
+                    <li class="tab-nav-item"><a class="tab-nav-link" href="#public-folders">
+                        <i class="fa fa-files-o"></i>
+                        Public Folders</a>
+                    </li>
+                </ul>
+
+                <div class="tab" id="quick-reports">
+                    
+                    <div class="control-header clearfix">
+						<select class="url-select hidden">
+                    </select>
+                        <button class="control-button open-settings-button open">
+                            <img class="wheel wheel-rotate" src="img/settings.png">
+                        </button>
+                        <button class="control-button expend-button hidden">
+                            <img src="img/expand.png">
+                        </button>
+                    </div>            
+                    <div class="settings">
+                        <form class="settings-content clearfix">
+                            <fieldset class="set-link">
+                                <span class="report-num">Report 01</span>
+                                <div class="set name">
+                                    <label for="qr-name01">Name</label>
+                                    <input autofocus class="name-input" type="text" id="qr-name01" value="" placeholder="site name...">
+                                </div>
+                                <div class="set url">
+                                    <label for="qr-url01">URL</label>
+                                    <input class="url-input" type="url" id="qr-url01" value="" placeholder="http://...">
+                                </div>
+                            </fieldset>
+                            <fieldset class="set-link">
+                                <span class="report-num">Report 02</span>
+                                <div class="set name">
+                                    <label for="qr-name02">Name</label>
+                                    <input class="name-input" type="text" id="qr-name02" value="" placeholder="site name...">
+                                </div>
+                                <div class="set url">
+                                    <label for="qr-url02">URL</label>
+                                    <input class="url-input" type="url" id="qr-url02" value="" placeholder="http://...">
+                                </div>
+                            </fieldset>
+                            <fieldset class="set-link">
+                                <span class="report-num">Report 03</span>
+                                <div class="set name">
+                                    <label for="qr-name03">Name</label>
+                                    <input class="name-input" type="text" id="qr-name03" value="" placeholder="site name...">
+                                </div>
+                                <div class="set url">
+                                    <label for="qr-url03">URL</label>
+                                    <input class="url-input" type="url" id="qr-url03" value="" placeholder="http://...">
+                                </div>
+                            </fieldset>
+                            <fieldset class="settings-buttons">
+                                <button type="reset" class="cancel-button">Cancel</button>
+                                <button type="submit" class="save-button">Save</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <iframe src=""></iframe>
+                </div>
+                <div class="tab hidden" id="fmy-folders">
+                    <form class="control-header clearfix">
+                         <button class="control-button expend-button">
+                                <img src="img/expand.png">
+                            </button>
+                    </form>
+                    <iframe src="https://stocksnap.io/"></iframe>
+                </div>
+
+                <div class="tab hidden" id="my-team-folders">
+                    
+                    <div class="control-header clearfix">
+						<select class="url-select hidden">
+                    </select>
+                        <button class="control-button open-settings-button">
+                            <img class="wheel" src="img/settings.png">
+                        </button>
+                        <button class="control-button expend-button hidden">
+                            <img src="img/expand.png">
+                        </button>
+                    </div>
+                    <div class="settings">
+                        <form class="settings-content clearfix">
+                            <fieldset class="set-link">
+                                <span class="report-num">Report 01</span>
+                                <div class="set name">
+                                    <label for="mtf-name01">Name</label>
+                                    <input autofocus class="name-input" type="text" id="mtf-name01" placeholder="site name...">
+                                </div>
+                                <div class="set url">
+                                    <label for="mtf-url01">URL</label>
+                                    <input class="url-input" type="url" id="mtf-url01" placeholder="http://...">
+                                </div>
+                            </fieldset>
+                            <fieldset class="set-link">
+                                <span class="report-num">Report 02</span>
+                                <div class="set name">
+                                    <label for="mtf-name02">Name</label>
+                                    <input class="name-input" type="text" id="mtf-name02" placeholder="site name...">
+                                </div>
+                                <div class="set url">
+                                    <label for="mtf-url02">URL</label>
+                                    <input class="url-input" type="url" id="mtf-url02" placeholder="http://...">
+                                </div>
+                            </fieldset>
+                            <fieldset class="set-link">
+                                <span class="report-num">Report 03</span>
+                                <div class="set name">
+                                    <label for="mtf-name03">Name</label>
+                                    <input class="name-input" type="text" id="mtf-name03" placeholder="site name...">
+                                </div>
+                                <div class="set url">
+                                    <label for="mtf-url03">URL</label>
+                                    <input class="url-input" type="url" id="mtf-url03" placeholder="http://...">
+                                </div>
+                            </fieldset>
+                            <fieldset class="settings-buttons">
+                                <button type="reset" class="cancel-button">Cancel</button>
+                                <button type="submit" class="save-button">Save</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <iframe src=""></iframe>
+                </div>
+
+                <div class="tab hidden" id="public-folders">
+                    <form class="control-header clearfix">
+                         <button class="control-button expend-button">
+                                <img src="img/expand.png">
+                            </button>
+                    </form>
+                    <iframe src="http://www.rleonardi.com/interactive-resume/"></iframe>
+
+                </div>
+            </div>
+        </section>
+
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/dropDown.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/tabCtrl.js"></script>
+        <script src="js/settingsForm.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/storage.js"></script>
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>
